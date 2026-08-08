@@ -1,0 +1,57 @@
+# ── 개인 레이어: 통째로 제외 ────────────────────────────────
+# 90_ME 안의 어떤 것도 회사 레포에 올라가지 않습니다.
+# 예외는 템플릿 시드(*.example)와 폴더 안내(CLAUDE.md)뿐.
+90_ME/*
+!90_ME/CLAUDE.md
+!90_ME/*.example
+
+# ── 회사 레이어의 실데이터 ──────────────────────────────────
+# *.example 은 추적(업데이트 가능), 실파일은 각 회사 것이므로 제외.
+#
+# ⚠️ 이 템플릿을 **우리 회사 레포로** 쓸 때는 아래 블록을 지우세요.
+#    회사 정본과 색인 카드를 전 직원과 공유하려면 추적해야 합니다.
+#    지우기 전에 개인정보·인사 정보가 안 섞였는지 한 번 확인하세요 (docs/ADMIN.md).
+00_COMPANY/identity.md
+00_COMPANY/brand_voice.md
+00_COMPANY/glossary.md
+30_KNOWLEDGE/INDEX.md
+30_KNOWLEDGE/cards/*
+!30_KNOWLEDGE/cards/.gitkeep
+
+# ── INGEST 작업물 ───────────────────────────────────────────
+ingest/_INBOX/*
+!ingest/_INBOX/.gitkeep
+ingest/_UNSORTED/*
+!ingest/_UNSORTED/.gitkeep
+ingest/_scan/
+ingest/plan.jsonl
+ingest/applied.jsonl
+
+# ── 자격증명 ────────────────────────────────────────────────
+# 주의: 와일드카드를 넓게 쓰면 소스 파일까지 제외됩니다.
+# (`*secret*` 는 tools/hooks/secret_guard.py 를 통째로 삼킵니다 — 실제로 겪은 사고입니다)
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+.secrets/
+secrets.json
+secrets.yaml
+credentials.json
+*_credentials.json
+*_token.json
+service_account*.json
+id_rsa
+id_ed25519
+
+# ── 잡동사니 ────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+.venv/
+*.bak
