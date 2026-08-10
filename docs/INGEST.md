@@ -100,7 +100,7 @@ python3 tools/ingest_apply.py --plan ingest/plan.jsonl
 
 ---
 
-## 5단계 — 색인 카드 (생략 금지)
+## 5단계 — 색인 카드 (반드시 씁니다)
 
 적재한 문서마다 `30_KNOWLEDGE/cards/{YYMMDD}_{분류}_{제목}.md`를 씁니다.
 형식은 `30_KNOWLEDGE/CLAUDE.md` 참조.
