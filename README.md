@@ -1,4 +1,4 @@
-<h1 align="center">🏢 Company Agent for Claude Code</h1>
+<h1 align="center">Company Agent for Claude Code</h1>
 
 <p align="center">
   <b>Turn Claude Code into a coworker who actually knows your job.</b><br>
@@ -45,7 +45,7 @@ an interview.
 No org chart. No headcount. No approval chains. No salaries. No employee roster.
 No company P&L.
 
-Not an oversight — a design decision. You don't need any of it to write a document or
+Not an oversight but a design decision. You don't need any of it to write a document or
 find a file, and a shared repo is exactly where that information gets exposed by one
 mis-shared path. The ingest pipeline refuses those files in code rather than in prose,
 so the rule doesn't erode over a long session — though detection itself is best-effort.
@@ -87,7 +87,7 @@ Full procedure: [docs/INGEST.md](docs/INGEST.md)
 
 ```
 00_COMPANY/    work standards — what the company does · voice · policy · glossary
-10_ROLES/      ★ your job. what you do and how to ask for it. this is where value lives
+10_ROLES/      ★ your job. what you do and how to ask for it
 20_PLAYBOOKS/  procedures · SOPs · checklists
 30_KNOWLEDGE/  index cards for ingested material + originals
 40_ASSETS/     logos · forms · templates
